@@ -1,0 +1,54 @@
+PROGRAM Primfaktorzerlegung
+  IMPLICIT NONE
+  
+  INTEGER :: a, m, i, j, m2, rest
+  
+  DO
+    WRITE(*,*) 'Geben Sie eine positive natürliche Zahl größer als 1 ein.'
+    READ(*,*) a
+    IF (a > 1) EXIT
+  END DO
+  
+  rest = a
+  
+  m = 1
+  
+  WRITE(*,*) ' Primfaktor    Quotient'
+  
+  DO j = a/2, 2, -1
+    m = MOD(a,j)
+    IF (m == 0) EXIT
+  END DO
+  
+  IF (m /= 0) WRITE(*,*) a, 1
+  
+  IF (m == 0) THEN
+    DO WHILE (rest > 1)
+      m = 1
+    
+      DO i = 2, a-1
+        DO j = 2, i/2, 1
+          m = MOD(i,j)
+          IF (m == 0) EXIT
+        END DO
+      
+        IF (m /= 0) THEN
+          m2 = MOD(rest,i)
+        
+          IF (m2 == 0) THEN
+            rest = rest/i
+            WRITE(*,*) i, rest
+          END IF
+          
+          IF (rest == 2) THEN
+            WRITE(*,*) 2, 1
+            rest = 1
+            EXIT
+          END IF
+        
+        END IF
+      END DO
+    END DO
+  END IF
+  
+END PROGRAM

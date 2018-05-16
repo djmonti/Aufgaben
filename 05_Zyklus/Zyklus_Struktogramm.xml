@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struktogramm fontfamily="83;101;114;105;102;" fontstyle="0" fontsize="15">
+  <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+    <text>83;117;109;109;101;32;61;32;48;</text>
+  </strelem>
+  <strelem typ="6" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+    <text>68;79;</text>
+    <schleifeninhalt>
+      <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>69;105;110;103;101;97;98;101;58;32;65;110;122;97;104;108;32;100;101;114;32;90;97;104;108;101;110;44;32;110;</text>
+      </strelem>
+      <strelem typ="1" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>73;70;32;110;32;62;32;48;</text>
+        <fall fallname="84;72;69;78;">
+          <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>69;88;73;84;</text>
+          </strelem>
+        </fall>
+        <fall fallname="69;76;83;69;">
+          <strelem typ="9" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>248;</text>
+          </strelem>
+        </fall>
+      </strelem>
+    </schleifeninhalt>
+  </strelem>
+  <strelem typ="3" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+    <text>68;79;32;105;32;61;32;49;44;32;110;</text>
+    <schleifeninhalt>
+      <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>69;105;110;103;97;98;101;58;32;90;97;104;108;</text>
+      </strelem>
+      <strelem typ="1" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>73;70;32;105;32;61;61;32;49;</text>
+        <fall fallname="84;72;69;78;">
+          <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>77;97;120;105;109;117;109;32;61;32;90;97;104;108;</text>
+          </strelem>
+          <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>77;105;110;105;109;117;109;32;61;32;90;97;104;108;</text>
+          </strelem>
+        </fall>
+        <fall fallname="69;76;83;69;">
+          <strelem typ="9" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>248;</text>
+          </strelem>
+        </fall>
+      </strelem>
+      <strelem typ="1" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>73;70;32;90;97;104;108;32;62;32;77;97;120;105;109;117;109;</text>
+        <fall fallname="84;72;69;78;">
+          <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>77;97;120;105;109;117;109;32;61;32;90;97;104;108;</text>
+          </strelem>
+        </fall>
+        <fall fallname="69;76;83;69;">
+          <strelem typ="9" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>248;</text>
+          </strelem>
+        </fall>
+      </strelem>
+      <strelem typ="1" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>73;70;32;90;97;104;108;32;60;32;77;105;110;105;109;117;109;</text>
+        <fall fallname="84;72;69;78;">
+          <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>77;105;110;105;109;117;109;32;61;32;90;97;104;108;</text>
+          </strelem>
+        </fall>
+        <fall fallname="69;76;83;69;">
+          <strelem typ="9" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+            <text>248;</text>
+          </strelem>
+        </fall>
+      </strelem>
+      <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>83;117;109;109;101;32;61;32;83;117;109;109;101;32;43;32;90;97;104;108;</text>
+      </strelem>
+      <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+        <text>77;105;116;116;101;108;119;101;114;116;32;61;32;83;117;109;109;101;32;47;32;105;</text>
+      </strelem>
+    </schleifeninhalt>
+  </strelem>
+  <strelem typ="0" zx="0" zy="0" textcolor="-16777216" bgcolor="-1">
+    <text>65;117;115;103;97;98;101;58;32;77;97;120;105;109;117;109;44;32;77;105;110;105;109;117;109;44;32;83;117;109;109;101;44;32;77;105;116;116;101;108;119;101;114;116;</text>
+  </strelem>
+</struktogramm>
+

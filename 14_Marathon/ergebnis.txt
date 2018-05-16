@@ -1,0 +1,5 @@
+           1 . Karin Berg                               3          45   56.0999985    
+           2 . Fritz Schmitz                            3          58   42.7000008    
+           3 . Otto Mueller                             5          45   16.7000008    
+           4 . Arthur Miller                            6          35   39.7000008    
+           5 . Sabine Schmitt                           7          42   38.5999985    

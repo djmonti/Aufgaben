@@ -1,0 +1,29 @@
+PROGRAM Prim_Mirp
+  INTEGER :: a, b = 0,j = -1, i = -1, rest
+  REAL    :: a_real
+
+  READ(*,*) a
+
+  DO
+    j      = j + 1
+    a_real = a
+    a_real = REAL(a) / REAL(10**j)
+    IF (a_real < 1) THEN
+      j = j - 1
+      EXIT
+    END IF
+  END DO
+  DO
+    i      = i + 1
+    rest   = MOD(a,10)
+    a      = a - rest
+    b      = b + (rest*(10**(j-i)))
+
+    a_real = a
+    a_real = REAL(a) / REAL(10**i)
+    IF ((j-i) == 0) EXIT
+    a      = a / 10
+  END DO
+
+  WRITE(*,*) b
+END PROGRAM

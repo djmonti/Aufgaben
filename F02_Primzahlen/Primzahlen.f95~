@@ -1,0 +1,21 @@
+PROGRAM Primzahlen
+  IMPLICIT NONE
+  
+  INTEGER :: a, i, j, m
+  
+  DO WHILE (a < 2)
+    WRITE(*,*) 'Bitte geben Sie die obere Grenze ein.'
+    READ(*,*) a
+  END DO
+  
+  m = 1
+  
+  DO i = 2, a
+    DO j = i/2, 2, -1
+      m = MOD(i,j)
+      IF (m == 0) EXIT
+    END DO
+    IF (m /= 0) WRITE(*,*) i
+  END DO
+  
+END PROGRAM Primzahlen

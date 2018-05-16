@@ -1,0 +1,25 @@
+PROGRAM Primzahl
+
+  INTEGER :: a
+  
+  READ(*,*) a
+  
+  IF prim(a) WRITE(*,*) 'ja'
+  
+  CONTAINS
+  
+  FUNCTION prim(x)
+  
+    INTEGER :: x, m = 1, i
+    LOGICAL :: prim
+  
+    DO i = x/2, 2, -1
+      m = MOD(x,i)
+      IF (m == 0) EXIT
+    END DO
+    
+    prim = (m /= 0)
+  END FUNCTION prim
+  
+  
+END PROGRAM Primzahl

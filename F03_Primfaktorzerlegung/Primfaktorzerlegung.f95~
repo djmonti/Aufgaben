@@ -1,0 +1,47 @@
+PROGRAM Primfaktorzerlegung
+  IMPLICIT NONE
+  
+  INTEGER :: j = 1, a, rest
+  
+  DO
+    WRITE(*,*) 'Geben Sie eine positive natürliche Zahl größer als 1 ein.'
+    READ(*,*) a
+    IF (a > 1) EXIT
+  END DO
+  
+  WRITE(*,*) ' Primfaktor    Quotient'
+  
+  rest = a
+  
+  DO
+    j = j + 1
+    IF (prim(rest)) THEN
+      WRITE(*,*) rest,1
+      EXIT
+    END IF
+    
+    IF ((((prim(j)) .OR. (j==2)) .OR. (j==3)) .AND. (MOD(rest,j) == 0)) THEN
+      rest = rest/j
+      WRITE(*,*) j, rest
+      j = 1
+    END IF
+    
+    IF (j>=a) EXIT     
+  END DO
+  
+  CONTAINS
+  
+  FUNCTION prim(x)
+  
+    INTEGER :: x, m = 1, i
+    LOGICAL :: prim
+  
+    DO i = x/2, 2, -1
+      m = MOD(x,i)
+      IF (m == 0) EXIT
+    END DO
+    
+    prim = ((m /= 0) .AND. (x>1))
+  END FUNCTION prim
+  
+END PROGRAM
